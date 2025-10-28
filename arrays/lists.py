@@ -7,7 +7,7 @@
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-newList = None
+newList = ['bag']
 
 ########################################################################
 
@@ -31,7 +31,8 @@ appendElement = "ok?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-listCopy = None
+listCopy = list1.copy()
+listCopy.append(appendElement)
 
 ########################################################################
 
@@ -56,6 +57,9 @@ cycleMeCopy = list(cycleMe)
 ###################### YOUR CODE BELOW THIS LINE #######################
 
 
+cycleMe.append(cycleMe.pop(0))
+cycleMe.append(cycleMe.pop(0))
+
 
 ########################################################################
 
@@ -74,7 +78,7 @@ keepMe = clearJustMe
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearJustMe = []
 
 ########################################################################
 
@@ -93,7 +97,7 @@ loseMe = clearAll
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-
+clearAll.clear()
 
 ########################################################################
 
@@ -111,7 +115,8 @@ allScoresCopy = list(allScores)
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-top3Scores = None
+allScores.sort(reverse=True)
+top3Scores = allScores[:3]
 
 ########################################################################
 
